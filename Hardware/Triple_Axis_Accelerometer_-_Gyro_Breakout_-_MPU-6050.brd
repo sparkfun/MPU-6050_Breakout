@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -160,7 +160,7 @@
 <text x="5.842" y="5.5372" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">CLK</text>
 <text x="3.302" y="6.4516" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">ASCL</text>
 <text x="0.7874" y="6.477" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">ASDA</text>
-<text x="19.0246" y="9.8298" size="0.7366" layer="21" font="vector" ratio="15" rot="SR270">AD0</text>
+<text x="20.2946" y="9.8298" size="0.7366" layer="21" font="vector" ratio="15" rot="SR270">AD0</text>
 <text x="8.382" y="5.207" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">VIO</text>
 <text x="8.382" y="2.921" size="1.016" layer="22" font="vector" ratio="15" rot="SMR90">VIO</text>
 <text x="7.747" y="6.731" size="0.762" layer="22" font="vector" ratio="15" rot="SMR90">CLK</text>
