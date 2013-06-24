@@ -6163,6 +6163,11 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="177.292" y1="105.156" x2="173.482" y2="105.156" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="173.482" y1="105.156" x2="173.482" y2="101.092" width="0.2032" layer="97" style="shortdash"/>
 <text x="251.46" y="167.64" size="1.778" layer="97">Played around with IC footprint. Added 4 small tcream squares to middle pad. Rounded and elongated pads.</text>
+<text x="251.46" y="127" size="1.778" layer="91">Chnages to V12:
+
+-0402 --&gt; 0603
+-Changed Z-Axis symbol to reflect proper orientation from circle with x to circle with dot
+-Changed NET labels in schematic to flags</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -6350,7 +6355,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <label x="25.4" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="AD0" class="0">
+<net name="N$2" class="0">
 <segment>
 <label x="142.24" y="104.14" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="AD0"/>
@@ -6420,4 +6425,10 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

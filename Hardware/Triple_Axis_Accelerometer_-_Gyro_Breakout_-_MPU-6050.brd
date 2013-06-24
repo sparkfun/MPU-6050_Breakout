@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -165,15 +165,13 @@
 <text x="8.382" y="2.921" size="1.016" layer="22" font="vector" ratio="15" rot="SMR90">VIO</text>
 <text x="7.747" y="6.731" size="0.762" layer="22" font="vector" ratio="15" rot="SMR90">CLK</text>
 <text x="20.447" y="6.35" size="0.762" layer="22" font="vector" ratio="15" rot="SMR90">SYNC</text>
-<wire x1="3.1242" y1="7.6454" x2="2.3368" y2="8.4328" width="0.2032" layer="21"/>
-<wire x1="3.1242" y1="8.4582" x2="3.1242" y2="8.4328" width="0.2032" layer="21"/>
-<wire x1="3.1242" y1="8.4328" x2="2.3622" y2="7.6708" width="0.2032" layer="21"/>
-<circle x="2.7432" y="8.0518" radius="0.5679" width="0.2032" layer="21"/>
 <wire x1="2.4638" y1="9.0424" x2="2.2098" y2="9.1694" width="0.254" layer="21"/>
 <wire x1="2.4638" y1="9.0424" x2="2.3368" y2="8.8138" width="0.254" layer="21"/>
 <wire x1="2.3368" y1="8.8138" x2="2.2098" y2="9.1694" width="0.254" layer="21"/>
 <wire x1="2.413" y1="9.0424" x2="2.6416" y2="7.112" width="0.254" layer="21" curve="153.372806"/>
 <rectangle x1="14.5034" y1="11.557" x2="15.113" y2="11.811" layer="41"/>
+<circle x="2.7686" y="8.0772" radius="0.127" width="0.254" layer="21"/>
+<circle x="2.7686" y="8.0772" radius="0.5334" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1739,21 +1737,6 @@ design rules under a new name.</description>
 <wire x1="7.454" y1="12.3952" x2="8.763" y2="12.3952" width="0.254" layer="1"/>
 <wire x1="8.763" y1="12.3952" x2="8.89" y2="12.2682" width="0.254" layer="1"/>
 </signal>
-<signal name="AD0">
-<contactref element="U1" pad="9"/>
-<contactref element="SJ1" pad="2"/>
-<via x="12.4714" y="6.5278" extent="1-16" drill="0.508"/>
-<via x="20.9296" y="8.2296" extent="1-16" drill="0.508"/>
-<wire x1="20.9296" y1="8.2296" x2="20.2692" y2="8.89" width="0.254" layer="1"/>
-<wire x1="19.05" y1="8.89" x2="20.2692" y2="8.89" width="0.254" layer="1"/>
-<wire x1="16.51" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="16"/>
-<wire x1="20.32" y1="10.16" x2="20.9296" y2="9.5504" width="0.254" layer="16"/>
-<wire x1="20.9296" y1="9.5504" x2="20.9296" y2="8.2296" width="0.254" layer="16"/>
-<wire x1="12.4425" y1="8.0384" x2="12.4425" y2="6.5567" width="0.254" layer="1"/>
-<wire x1="12.4425" y1="6.5567" x2="12.4714" y2="6.5278" width="0.254" layer="1"/>
-<wire x1="12.4714" y1="6.5278" x2="12.8778" y2="6.5278" width="0.254" layer="16"/>
-<wire x1="12.8778" y1="6.5278" x2="16.51" y2="10.16" width="0.254" layer="16"/>
-</signal>
 <signal name="INT">
 <contactref element="U1" pad="12"/>
 <wire x1="14.605" y1="6.985" x2="17.272" y2="6.985" width="0.254" layer="1"/>
@@ -1805,6 +1788,21 @@ design rules under a new name.</description>
 <wire x1="11.9379" y1="8.0384" x2="11.9379" y2="7.1881" width="0.254" layer="1"/>
 <wire x1="11.9379" y1="7.1881" x2="11.0744" y2="6.3246" width="0.254" layer="1"/>
 <wire x1="11.0744" y1="6.3246" x2="8.9018" y2="6.3246" width="0.254" layer="1"/>
+</signal>
+<signal name="N$2">
+<wire x1="12.446" y1="6.477" x2="13.843" y2="6.477" width="0.254" layer="16"/>
+<wire x1="13.843" y1="6.477" x2="15.494" y2="8.128" width="0.254" layer="16"/>
+<via x="16.637" y="8.128" extent="1-16" drill="0.508"/>
+<wire x1="15.494" y1="8.128" x2="16.637" y2="8.128" width="0.254" layer="16"/>
+<wire x1="16.637" y1="8.128" x2="17.018" y2="8.128" width="0.254" layer="1"/>
+<wire x1="17.018" y1="8.128" x2="17.78" y2="8.89" width="0.254" layer="1"/>
+<contactref element="U1" pad="9"/>
+<contactref element="SJ1" pad="2"/>
+<via x="12.4714" y="6.5278" extent="1-16" drill="0.508"/>
+<wire x1="12.4425" y1="8.0384" x2="12.4425" y2="6.5567" width="0.254" layer="1"/>
+<wire x1="12.4425" y1="6.5567" x2="12.4714" y2="6.5278" width="0.254" layer="1"/>
+<wire x1="17.78" y1="8.89" x2="19.05" y2="8.89" width="0.254" layer="1"/>
+<wire x1="12.4714" y1="6.5278" x2="12.446" y2="6.477" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>
