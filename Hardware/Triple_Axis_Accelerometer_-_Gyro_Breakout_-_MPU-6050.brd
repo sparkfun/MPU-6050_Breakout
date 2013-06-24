@@ -144,7 +144,7 @@
 <text x="3.302" y="2.921" size="1.016" layer="22" font="vector" ratio="15" rot="MR90">ASCL</text>
 <text x="18.542" y="2.921" size="1.016" layer="22" font="vector" ratio="15" rot="MR90">INT</text>
 <text x="21.082" y="2.921" size="1.016" layer="22" font="vector" ratio="15" rot="MR90">GND</text>
-<text x="0.6858" y="8.0518" size="0.9524" layer="16" font="vector" ratio="20" rot="SMR90">V11</text>
+<text x="0.6858" y="8.0518" size="0.9524" layer="16" font="vector" ratio="20" rot="SMR90">V12</text>
 <text x="5.588" y="10.668" size="1.016" layer="22" font="vector" ratio="15" rot="SMR180">MPU-6050 Breakout</text>
 <text x="3.8862" y="10.3378" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">Y</text>
 <text x="5.5372" y="10.3378" size="1.016" layer="21" font="vector" ratio="15" rot="SR270">X</text>
