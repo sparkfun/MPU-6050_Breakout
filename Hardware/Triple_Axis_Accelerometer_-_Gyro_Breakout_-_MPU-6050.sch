@@ -6355,7 +6355,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <label x="25.4" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="ADO" class="0">
 <segment>
 <label x="142.24" y="104.14" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="AD0"/>
